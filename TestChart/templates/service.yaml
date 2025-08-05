@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     app: {{ .Values.Webserver.AppName }}
-  type: Loadbalancer
+  type: LoadBalancer
   ports:
     - protocol: TCP
       port: {{ .Values.Loadbalancer.ExternalPort}}
