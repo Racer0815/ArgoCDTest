@@ -10,5 +10,5 @@ Webserver:
   AppName: testchart-frontend
 
 Loadbalancer:
-  AppName: testchart-Loadbalancer
+  AppName: testchart-loadbalancer
   ExternalPort: 9000
