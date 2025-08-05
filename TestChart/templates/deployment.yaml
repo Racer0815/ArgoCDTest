@@ -13,7 +13,7 @@ spec:
         app: {{ .Values.Webserver.AppName }}
     spec:
       containers:
-        - name: Webserver
+        - name: webserver
           image: "{{ .Values.Webserver.image.repository }}:{{ .Values.Webserver.image.tag }}"
           imagePullPolicy: IfNotPresent
           ports:
