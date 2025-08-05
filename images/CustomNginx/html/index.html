@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Podlist</title>
+</head>
+<body>
+    <h1>I am a pod:</h1>
+    <p id="podname"></p>
+
+    <script>
+        fetch("/podname")
+            .then(response => response.text())
+            .then(name => {
+                document.getElementById("podname").textContent = name;
+            });
+    </script>
+</body>
+</html>
