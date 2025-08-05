@@ -1,0 +1,8 @@
+Webserver:
+  image:
+    repository: nginx
+    tag: latest
+  
+  replicas: 1
+
+  containerPort: 80
