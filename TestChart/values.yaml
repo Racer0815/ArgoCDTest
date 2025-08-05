@@ -3,7 +3,7 @@ Webserver:
     repository: nginx
     tag: latest
   
-  replicas: 10
+  replicas: 1
 
   containerPort: 80
 
