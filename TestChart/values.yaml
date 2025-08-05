@@ -1,6 +1,6 @@
 Webserver:
   image:
-    repository: harbor.racer0815.de/argocd_test/custom-nginx@sha256:abc61e14ccec3a3191152cb6dd9b2b92c3102aab500536f5fa08c3dd28b526d4
+    repository: harbor.racer0815.de/argocd_test/custom-nginx
     tag: latest
   
   replicas: 10
