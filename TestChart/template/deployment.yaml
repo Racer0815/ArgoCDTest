@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: testchart
 spec:
-  replicas: {{ .Values.Webserver.replicaCount }}
+  replicas: 1
   selector:
     matchLabels:
       app: testchart
@@ -17,4 +17,4 @@ spec:
           image: nginx:latest
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: {{ .Values.Webserver.containerPort }}
+            - containerPort: 80
