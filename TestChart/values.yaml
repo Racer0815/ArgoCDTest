@@ -5,7 +5,6 @@ Webserver:
   image:
     repository: nginx
     tag: latest
-    pullPolicy: IfNotPresent
 
   containerPort: 80
 

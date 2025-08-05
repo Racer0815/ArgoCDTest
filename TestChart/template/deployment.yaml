@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: "{{ .Values.Webserver.image.repository }}:{{ .Values.Webserver.image.tag }}"
-          imagePullPolicy: {{ .Values.Webserver.image.pullPolicy }}
+          image: nginx:latest
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: {{ .Values.Webserver.containerPort }}
