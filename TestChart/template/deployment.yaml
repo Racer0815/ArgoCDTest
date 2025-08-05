@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kinf: Deployment
+kind: Deployment
 metadata:
   name: TestChart
 spec:
@@ -16,4 +16,4 @@ spec:
         - name: nginx
           image: {{.Values.Webserver.image}}
           ports:
-            - containerPort: 80
+            - containerPort: {{.Values.Webserver.containerPort}}

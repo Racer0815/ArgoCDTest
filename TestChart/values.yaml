@@ -1,6 +1,6 @@
 Webserver:
 
-  replicaCount: 1
+  replicas: 1
 
   image:
     repository: nginx

@@ -8,4 +8,4 @@ spec:
   ports:
     - protocol: TCP
       port: {{ .Values.External.port }}
-      targetPort: {{ .Values.Webserver.containerport }}
+      targetPort: {{ .Values.Webserver.containerPort }}
