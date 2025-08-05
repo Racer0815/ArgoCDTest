@@ -1,7 +1,7 @@
 Webserver:
   image:
     repository: harbor.racer0815.de/argocd_test/custom-nginx
-    tag: latest
+    tag: v0.1.0
   
   replicas: 10
 
