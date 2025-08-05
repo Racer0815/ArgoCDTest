@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: {{ .Values.Loadbalancer.AppName}}
+spec:
+  selector:
+    app: {{ .Values.Webserver.AppName }}
+  type: Loadbalancer
+  ports:
+    - protocol: TCP
+      port: {{ .Values.Loadbalancer.ExternalPort}}
+      targetPort: {{ .Values.Webserver.containerPort}}

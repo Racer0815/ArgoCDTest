@@ -6,3 +6,9 @@ Webserver:
   replicas: 1
 
   containerPort: 80
+
+  AppName: testchart-frontend
+
+Loadbalancer:
+  AppName: testchart-Loadbalancer
+  ExternalPort: 9000
