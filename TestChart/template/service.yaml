@@ -5,6 +5,7 @@ metadata:
 spec:
   selector:
     app: testchart
+  type: LoadBalancer
   ports:
     - protocol: TCP
       port: 9000
