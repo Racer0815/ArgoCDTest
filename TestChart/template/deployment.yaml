@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kinf: Deployment
+metadata:
+  name: TestChart
+spec:
+  replicas: {{.Values.Webserver.replicas}}
+  selector:
+    matchLabels:
+      app: TestChart
+  template:
+    metadata:
+      labels:
+        app: TestChart
+    spec:
+      containers:
+        - name: nginx
+          image: {{.Values.Webserver.image}}
+          ports:
+            - containerPort: 80

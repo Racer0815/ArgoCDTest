@@ -1,0 +1,4 @@
+apiversion: v2
+name: TestChart
+version: 0.1.0
+description: A Helm chart for learning how to use Helm and ArgoCD
