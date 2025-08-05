@@ -1,19 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: TestChart
+  name: testchart
 spec:
-  replicas: {{.Values.Webserver.replicas}}
+  replicas: {{ .Values.Webserver.replicaCount }}
   selector:
     matchLabels:
-      app: TestChart
+      app: testchart
   template:
     metadata:
       labels:
-        app: TestChart
+        app: testchart
     spec:
       containers:
         - name: nginx
           image: "{{ .Values.Webserver.image.repository }}:{{ .Values.Webserver.image.tag }}"
+          imagePullPolicy: {{ .Values.Webserver.image.pullPolicy }}
           ports:
-            - containerPort: {{.Values.Webserver.containerPort}}
+            - containerPort: {{ .Values.Webserver.containerPort }}
