@@ -12,3 +12,6 @@ Webserver:
 Loadbalancer:
   AppName: testchart-loadbalancer
   ExternalPort: 9000
+
+HelloWorldJob:
+  AppName: testchart-helloworld
